@@ -74,20 +74,20 @@ function FormCategoria() {
 
   return (
     <div className="container flex flex-col items-center justify-center mx-auto px-2 pt-4 ">
-      <h1 className="text-3xl md:text-4xl text-center my-8 text-teal-500">
+      <h1 className="text-3xl md:text-4xl text-center my-8 text-white font-medium">
         {id === undefined ? 'Cadastrar Categoria' : 'Editar Categoria'}
       </h1>
 
       <form className="w-full max-w-md md:max-w-1/2 flex flex-col gap-4 px-2"
         onSubmit={gerarNovaCategoria}
       >
-        <div className="flex flex-col gap-2 text-violet-500 font-medium text-2xl">
+        <div className="flex flex-col gap-2 text-white font-medium text-2xl">
           <label htmlFor="categoria">Categoria</label>
           <input
             type="text"
             placeholder="Categoria"
             name='tipo'
-            className="bg-white border-2 border-teal-300 rounded p-2 utral-800 text-base md:text-lg"
+            className="bg-white/30 border-2 border-teal-300 rounded p-2 utral-800 text-base md:text-lg"
             required
             value={categoria.tipo}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}

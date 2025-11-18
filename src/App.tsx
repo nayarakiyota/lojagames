@@ -12,14 +12,14 @@ function App() {
 
       <BrowserRouter>
         <Navbar />
-        <div className="min-h-[80vh]">
+        <div className="flex flex-col min-h-[64vh] bg-linear-to-bl from-violet-300 via-violet-400 to-teal-300">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/categorias" element={<ListaCategorias />} />
             <Route path="/cadastrarcategoria" element={<FormCategoria />} />
             <Route path="/editarcategoria/:id" element={<FormCategoria />} />
-            <Route path="/deletarcategoria/:id" element={<DeletarCategoria/>} />
+            <Route path="/deletarcategoria/:id" element={<DeletarCategoria />} />
           </Routes>
         </div>
         <Footer />
