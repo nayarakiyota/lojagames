@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# 🎮 Loja de Games
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Banner Loja de Games](https://ik.imagekit.io/qiazjnea4/lojadegames-min.png) 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bem-vinde ao projeto **Loja de Games** — uma aplicação web desenvolvida com foco em gerenciamento de produtos e categorias no universo gamer.
 
-## React Compiler
+## 🧩 Visão Geral
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Esta aplicação foi criada com as seguintes características:
+- Front-end construído usando **React + TypeScript**
+- Empacotada com **Vite** como bundler 
+- Lint configurado via ESLint para manutenção de qualidade de código
+- Pastas principais incluem `public`, `src`, com a lógica de componentes/páginas, tipagem, etc.  
+- Estrutura de projeto preparada para expansão e manutenção futura.
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades Principais
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Página inicial com banner de boas-vindas e botão “Novo Produto” para iniciar cadastro.  
+- Menu de navegação para:  
+  - Listagem de **Produtos**  
+  - Listagem de **Categorias**  
+  - Cadastro de **Categoria**  
+- Cadastro de novos produtos em categorias definidas.  
+- Visual limpo, foco em usabilidade e estética gamer-friendly.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠 Tecnologias e Ferramentas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React** — biblioteca para construção de interfaces.  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **TypeScript** — tipagem estática para maior robustez.  
+
+- **Vite** — ambiente de bundling e hot-reload moderno.  
+
+- **ESLint** — para garantir consistência e qualidade do código.  
+
+- HTML & CSS para estrutura e estilização.  
+
+- **Git + GitHub** para versionamento e colaboração.
+
+  
+
+## 🎯 Como Executar Localmente
+
+1. Clone o repositório  
+   ```bash
+   git clone https://github.com/nayarakiyota/lojagames.git
+
+2. Acesse o diretório
+
+```
+cd lojagames
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Instale as dependências
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+npm install
+```
+
+4. Inicie o servidor de desenvolvimento
+
+```
+npm run dev
+```
+
+5. Abra o navegador e vá para `http://localhost:3000` (ou a porta indicada pelo Vite) e confira o banner e navegação.
+
+## 🤝 Contribuições
+
+Muito bem-vinde a colaborar!
+
+- Abra uma issue para sugerir algo ou relatar um bug.
+- Faça fork → branch com sua melhoria → pull request.
+- Mantenha o padrão de código e estilo já existente no projeto.
+
+------
+
+<h3 align="center">
+  Desenvolvido com 💜☕ por <strong>Nayara Kiyota</strong>
+</h3>
+
+
+<p align="center">   <a href="https://github.com/nayarakiyota" target="_blank">     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40px" alt="GitHub"/>   </a>   &nbsp;&nbsp;   <a href="https://www.linkedin.com/in/nayara-kiyota/" target="_blank">     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40px" alt="LinkedIn"/>   </a> </p>
+
