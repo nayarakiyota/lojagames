@@ -47,10 +47,10 @@ function DeletarCategoria() {
 
     return (
         <div className="container w-1/3 mx-auto">
-            <h1 className="py-4 text-4xl text-center text-violet-500">
+            <h1 className="py-4 text-4xl text-center text-violet-700">
                 Deletar Categoria
             </h1>
-            <p className="mb-4 font-semibold text-center text-violet-500">
+            <p className="mb-4 font-semibold text-center text-violet-700">
                 Você tem certeza de que deseja apagar a categoria a
                 seguir?
             </p>
@@ -58,7 +58,7 @@ function DeletarCategoria() {
                 <header className="px-6 py-2 text-2xl font-bold text-white bg-linear-to-bl from-violet-300 via-violet-400 to-teal-300">
                     Categoria
                 </header>
-                <p className="h-full p-8 text-3xl bg-white/30">
+                <p className="h-full p-8 text-3xl bg-white/20">
                     {categoria.tipo}
                 </p>
                 <div className="flex">
